@@ -1,11 +1,11 @@
 import { Text, View } from 'react-native';
 
-const Index = () => {
+const Explore = () => {
   return (
     <View>
-      <Text>Hello</Text>
+      <Text>Explore</Text>
     </View>
   );
 };
 
-export default Index;
+export default Explore;
