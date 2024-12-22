@@ -16,7 +16,7 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
-
+seed-database/
 # Metro
 .metro-health-check*
 .idea
