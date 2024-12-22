@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
 
+import { GlobalProvider } from '@/libs/global-provider';
+
 import './global.css';
 
 const RootLayout = () => {
@@ -23,7 +25,11 @@ const RootLayout = () => {
 
   if (!fontsLoaded) return null;
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <GlobalProvider>
+      <Stack screenOptions={{ headerShown: false }} />
+    </GlobalProvider>
+  );
 };
 
 export default RootLayout;
